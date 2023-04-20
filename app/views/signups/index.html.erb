@@ -1,0 +1,11 @@
+<h1>Signups#index</h1>
+<ul>
+  <% @signup.each do |signup| %>
+    <li>
+      <%= signup.email %>
+    </li>
+  <% end %>
+</ul>
+
+<%= link_to "New Signup", new_signup_path %>
+<%# <%= link_to "Logout", new_signup_path %> %>
